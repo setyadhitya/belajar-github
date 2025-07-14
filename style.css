@@ -1,0 +1,139 @@
+/* Reset ukuran box agar padding & border tidak menambah ukuran elemen */
+* {
+  box-sizing: border-box;
+}
+
+/* Style dasar seluruh halaman */
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Kontainer utama untuk membungkus form atau konten */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Judul halaman */
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Label untuk input dan teks */
+label {
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  text-align: left;
+}
+
+/* Area teks jawaban */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+}
+
+/* Tombol submit */
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Link logout atau navigasi */
+.logout {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Tabel rekap jawaban */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* Sel tabel (header dan isi) */
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Header tabel */
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Baris genap beda warna */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Efek hover di baris tabel */
+tr:hover {
+  background-color: #eaf4fc;
+}
+
+/* Pembungkus tabel agar bisa digeser di layar kecil */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsif tambahan untuk layar kecil */
+@media (max-width: 400px) {
+  .container {
+    padding: 1rem;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
